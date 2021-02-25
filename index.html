@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>The Simpson's Quiz</title>
+<link href ="style.css" rel ="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>So You Think You're a Simpsons Expert?</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "Questions">What is Bart’s full name?</p>
+<input type = "radio" id = "multiplechoice" name = "Question1" value = "Bartolomeo J Simpson"> Bartolomeo J Simpson<br>
+<input type = "radio" id = "multiplechoice" name = "Question1" value = "Bart Simpson"> Bart Simpson<br>
+<input type = "radio" id = "multiplechoice" name = "Question1" value = "Bartholomew JoJo Simpson"> Bartholomew JoJo Simpson<br><br>
+
+<p class = "Questions">What’s the name of the Simpsons’ pet dog?</p>
+<input type = "radio" id = "multiplechoice" name = "Question2" value = "Rudloph"> Rudolph<br>
+<input type = "radio" id = "multiplechoice" name = "Question2" value = "Santa’s Little Helper"> Santa’s Little Helper<br>
+<input type = "radio" id = "multiplechoice" name = "Question2" value = "Snowball"> Snowball<br><br>
+
+<p class = "questions">What is Bart's twin called?</p>
+
+<input type = "radio" id = "multiplechoice" name = "Question3" value = "Hugo"> Hugo<br>
+<input type = "radio" id = "multiplechoice" name = "Question3" value = "Bort"> Bort<br>
+<input type = "radio" id = "multiplechoice" name = "Question3" value = "El Barto"> El Barto<br>
+<br>
+
+<input id = "button" type = "button" value = "All done" onclick = "check();">
+
+
+</form>
+
+<div id = "after_Alldone">
+<p id = "numberCorrect"></p>
+<p id = "picResult"></p>
+<img id = "picture">
+</div>
+
+
+</body>
+</html>
