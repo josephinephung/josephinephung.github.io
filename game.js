@@ -192,8 +192,6 @@ const textNodes = [
       }
     ]
   }
-  ]
+]
 
 
-
-startGame()
