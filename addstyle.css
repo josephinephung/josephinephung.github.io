@@ -16,15 +16,14 @@ body {
   background-color: #B86DBC;
 }
 
+
 .container {
   width: 800px;
   max-width: 80%;
   background-color: #a801b3;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-    float: left;
-  margin-left: -1000px;
-    margin-top: 570px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
 }
 
 .btn-grid {
