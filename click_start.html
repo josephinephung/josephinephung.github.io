@@ -7,9 +7,10 @@ initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
+
 <html> 
 	<head>
-		<title>HUNGRY TIMES</title>
+		<title>GAME START</title>
 
 	</head>
 
@@ -17,10 +18,15 @@ initial-scale=1.0">
 
 		<div id="scene">
 
-			<h1>HUNGRY TIMES</h1> 
+		
 
-			<p id="location"> Press <a href="click_start.html"> START </a> to begin.
+			<a href="fridge.html" id="fridge">  </a>
 
+			<a href="bed.html" id="bed"> </a>
+
+			<p id="location"> It is midnight. You yawn and get ready for bed, but as you approach your room your stomach grumbles. You are hungry. 
+<br>
+					Do you <a href="bed.html">head to bed anyways</a> or <a href="fridge.html">head to the fridge?</a></p> 
 		</div>
 
 		
@@ -32,22 +38,13 @@ initial-scale=1.0">
 
 		body {
 
-			font-size: 25px;
+			font-size: 18px;
 			background-color: #B86DBC;
 			color: white;
 			font-family: Arial;
 		}
 
-		h1{
-			font-family: Helvetica;
-			font-size: 70px;
-			padding: 0 0 0 0;
-			margin: 0 0 0 0;
-
-			position: absolute;
-			left: 250px;
-		}
-
+	
 		a{
 			color: white;
 			text-decoration: none;
@@ -58,7 +55,7 @@ initial-scale=1.0">
 		}
 
 		#scene {
-			background: url("start.jpg") no-repeat;
+			background: url("pick 1-01-01.jpg") no-repeat;
 			height: 600px;
 			width: 1065px;
 
@@ -79,6 +76,33 @@ initial-scale=1.0">
 			text-align: center;
 		}
 
+		#fridge{
+
+				position:absolute;
+				left: 91px;
+				top: 47px;
+
+				width: 261px;
+				height: 440px;
+			}
+
+		#fridge:hover{
+		background-color: rgba(256,256,256,.5); 
+		}
+
+		#bed{
+
+				position:absolute;
+				left: 655px;
+				top: 212px;
+
+				width: 372px;
+				height: 256px;
+			}
+
+		#bed:hover{
+		background-color: rgba(256,256,256,.5); 
+		}
 
 		</style>
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>THE FRIDGE</title>
+
+<link href ="fridgeStyle.css" rel ="stylesheet">
+
+		<script src="gamemanager.js"></script>
+	<script src="weapon.js"></script>
+	<script src="food.js"></script>
+</head>
+<body>
+
+
+    <div id="restart">
+    	<br>
+      <a href="click_start.html"> Return to Start </a>
+
+  </div>
+
+		 	<div class="header">
+		 		
+		 		<p> You head to the fridge to find that your kitchen has been taken over by food! You rub your eyes. But to your dismay, the food creatures are very much alive and menacing!</p> 
+		 		<p>You must reclaim your kitchen before the food creatures completely take over your entire home! </p>
+		 		<h2> It is time to fight. Choose your weapon! </h2> 
+		 		
+		 	</div> 
+
+		 		<div class="interface">
+		 			<a href="#" onclick="GameManager.setGameStart('bottleOpener')">
+		 					<img src="img/weapons/bottle.png">
+		 				<div> 
+		 					<h3>Bottle Opener</h3>
+		 					<p>Simple, no frills stainless steel bottle opener.</p>
+		 				</div>
+		 			</a>
+
+
+		 				<a href="#" onclick="GameManager.setGameStart('spork')">
+		 				<img src="img/weapons/spork.png"> 
+		 				<div> 
+		 					<h3>Spork</h3>
+		 					<p>A plastic spoon and a fork in one, so multifunctional.</p>
+
+		 				</div>
+		 			</a>
+		 				<a href="#" onclick="GameManager.setGameStart('teaKettle')">
+		 				<img src="img/weapons/teakettle.png"> 
+		 				<div> 
+		 					<h3>Tea Kettle</h3>
+		 					<p>A stainless steel kettle full of boiling water.</p>
+
+		 				</div>
+		 			</a>
+		 	</div> 
+
+<div class="actions">
+
+		 	</div> 
+
+		 	<div class="arena">
+	
+		 	</div> 
+
+		 		<div class="food">
+	
+		 	</div> 
+
+<style>
+
+	a{
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+ #restart {
+  position: absolute;
+      top: 5px;
+      left: 14px;
+
+
+    }
+
+  </style>
+
+</body>
