@@ -10,7 +10,7 @@ function showTextNode(textNodeIndex) {
   textElement.innerText = textNode.text
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
-  }
+  } 
   
   function startGame() {
   state = {}
