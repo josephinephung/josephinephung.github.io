@@ -195,3 +195,4 @@ const textNodes = [
 ]
 
 
+startGame()
