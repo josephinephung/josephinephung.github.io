@@ -3,10 +3,7 @@ const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
 
-function startGame() {
-  state = {}
-  showTextNode(1)
-}
+
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -14,6 +11,11 @@ function showTextNode(textNodeIndex) {
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
+  
+  function startGame() {
+  state = {}
+  showTextNode(1)
+}
 
   textNode.options.forEach(option => {
     if (showOption(option)) {
