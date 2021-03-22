@@ -39,3 +39,4 @@ function check(){
 	document.getElementById("picture").src = pictures[score];
 	}
 
+
