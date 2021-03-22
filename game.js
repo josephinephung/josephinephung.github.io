@@ -1,5 +1,5 @@
-const textElement = document.getElementById('text')
-const optionButtonsElement = document.getElementById('option-buttons')
+const textElement = document.getElementById('text');
+const optionButtonsElement = document.getElementById('option-buttons');
 
 let state = {}
 
@@ -24,7 +24,7 @@ function showTextNode(textNodeIndex) {
       button.classList.add('btn')
       button.addEventListener('click', () => selectOption(option))
       optionButtonsElement.appendChild(button)
-    }
+    }; 
   })
 }
 
