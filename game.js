@@ -189,10 +189,9 @@ const textNodes = [
       {
         text: 'Try Again',
         nextText: -1
-      }
+     }
     ]
   }
 ]
-
 
 startGame()
