@@ -59,7 +59,7 @@ let GameManager = {
 	getFood.innerHTML = '<img src="img/food/' + food.foodType.toLowerCase() + '.jpg" class="img-food"><div><h3>' + food.foodType + '</h3><p class="health-food">Health: ' + food.health + '</p><p>Mana: ' + food.mana + '</p><p>Strength: ' + food.strength + '</p><p>Agility: ' + food.agility + '</p><p>Speed: ' + food.speed + '</p></div>';
 
 	}
-	}
+		}
 
 
 
