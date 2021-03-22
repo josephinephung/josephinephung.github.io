@@ -19,7 +19,7 @@ let GameManager = {
 		}
 
 		let getInterface = document.querySelector(".interface");
-		getInterface.innerHTML = '<img src="img/weapons/' + classType.toLowerCase() + '.png" class="img-weapon"><div><h3>' + classType + '</h3><p class="health-weapon">Health: ' + weapon.health + '</p><p>Mana: ' + weapon.mana + '</p><p>Strength: ' + weapon.strength + '</p><p>Agility: ' + weapon.agility + '</p><p>Speed: ' + weapon.speed + '</p></div>';
+		getInterface.innerHTML = '<img src="classType.toLowerCase() + '.png" class="img-weapon"><div><h3>' + classType + '</h3><p class="health-weapon">Health: ' + weapon.health + '</p><p>Mana: ' + weapon.mana + '</p><p>Strength: ' + weapon.strength + '</p><p>Agility: ' + weapon.agility + '</p><p>Speed: ' + weapon.speed + '</p></div>';
 
 	},
 
@@ -56,7 +56,7 @@ let GameManager = {
 	}
 	getHeader.innerHTML = '<p>ITS GO TIME. </p>';
 	getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="WeaponMoves.calcAttack()">ATTACK!</a>';
-	getFood.innerHTML = '<img src="img/food/' + food.foodType.toLowerCase() + '.jpg" class="img-food"><div><h3>' + food.foodType + '</h3><p class="health-food">Health: ' + food.health + '</p><p>Mana: ' + food.mana + '</p><p>Strength: ' + food.strength + '</p><p>Agility: ' + food.agility + '</p><p>Speed: ' + food.speed + '</p></div>';
+	getFood.innerHTML = '<img src="food.foodType.toLowerCase() + '.jpg" class="img-food"><div><h3>' + food.foodType + '</h3><p class="health-food">Health: ' + food.health + '</p><p>Mana: ' + food.mana + '</p><p>Strength: ' + food.strength + '</p><p>Agility: ' + food.agility + '</p><p>Speed: ' + food.speed + '</p></div>';
 
 	}
 	}
