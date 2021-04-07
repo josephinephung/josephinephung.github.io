@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Music Venue Events</title>
+    <style>
+      html, 
+
+      body {
+
+      font-size: 13px;
+      background-color: #000;
+      color: white;
+      font-family: Arial;
+    }
+
+    h1{
+      font-family: Helvetica;
+      font-size: 50px;
+      color: #ff66cc;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+
+      position: absolute;
+      left: 210px;
+    }
+
+    
+      
+      .accordion {
+        margin: 50px;
+      }
+      
+      .accordion dt,
+      .accordion dd {
+        padding: 10px;
+        border: 1px solid #ff66cc
+;
+      }
+      
+      .accordion dt a,
+      .accordion dd a {
+        display: block;
+        color: #ff66cc;
+        font-size: 25px;
+         font-family: Arial;
+        font-weight: bold;
+      }
+
+
+    
+      
+      .accordion dt {
+        background-color: #ffe6ff;
+      }
+      
+      .accordion dd {
+        margin: 0;
+        border-top-width: 0;
+        border-bottom-width: 0;
+        font-size: 1rem;
+      }
+      
+      .accordion dd:last-of-type {
+        border-bottom-width: 1px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+
+        var panels = $('.accordion > dd').hide();
+        
+
+        panels.first().show();
+        
+
+        $('.accordion > dt > a').click(function() {
+          var $this = $(this);
+          
+
+          panels.slideUp();
+          
+
+          $this.parent().next().slideDown();
+          
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+<div id="title">
+<h1>BigMusicClubConclomerate’s Music Venue Events</h1> 
+</div> 
+<br>
+<br>
+
+  <center>  <dl class="accordion">
+      <dt><a href="">Big Hall</a></dt>
+      <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl quam, convallis ac lacus vel, mollis bibendum ante.</dd>
+      <dt><a href="">Smokey Club</a></dt>
+      <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl quam, convallis ac lacus vel, mollis bibendum ante.</dd>
+      <dt><a href="">Little Café</a></dt>
+      <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl quam, convallis ac lacus vel, mollis bibendum ante.</dd>
+    </dl></center>
+  </body>
+</html>
