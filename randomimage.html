@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Image</title>
+
+	</head>
+	<body>
+		<div class="container">
+			
+			<h1 class="text-center"> 
+				Generate a random image.
+			</h1>
+
+			<form id="myForm" autocomplete="off">
+				<div class="form-group">
+					<input type="text" id="search" placeholder="Search for random image" required class="form-control">
+				</div>
+				<br>
+				<div class'"form-group">
+					<button class="btn btn-block btn-danger">
+					Search
+					</button>
+				</div>
+
+			</form>
+		<img id="img" class="img-thumbnail"/>
+	</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+
+	$("#myForm").submit(function(e){
+		e.preventDefault()
+
+		var search = $("#search").val()
+
+		var url ="https://loremflickr.com/320/240/"+search
+
+		$("#img").attr("src",url)
+	})
+
+</script>
+</html> 
