@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Z100 Summer Music Bash</title>
+	<link rel="stylesheet" href="style3.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			     $(".info").hover(function() {
+		  $('.info-full', this).slideToggle(100, 'linear');		
+		  		  $('.info-full', this).display(100, 'linear');		
+
+		});
+		});
+        });
+
+
+
+	</script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      showButtonPanel: true
+    });
+  } );
+  </script>
+
+
+
+</head>
+<body>
+
+
+<center><div id="title">
+	<br><br><br>
+<h1>Z100’s SUMMER MUSIC BASH</h1> 
+</div> </center>
+
+<div class="wrapper">
+  <div class="accordion_wrap accordion_1">
+    <div class="accordion_header">
+      June
+    </div>
+    <div class="accordion_body">
+      <p>Live at Northwell Health at Jones Beach Theater, June 12-18. Catch your favorite arstists live, Jones Beach State Park 895 Bay Pkwy, Wantagh, NY 11793.</p>
+ 		<div class="info">
+<center>		<span>Mouse over for artist lineup</span>
+<span class="info-full">Madonna, Drake, Bjork, Lady Gaga, David Bowie, Kendrick Lamar, Pixies, Beyonce Rihanna <br> 
+For more details visit <a href="https://z100.iheart.com/">Z100</a>
+</span></center>
+	</div>
+    </div>
+  </div>
+  <div class="accordion_wrap accordion_2">
+    <div class="accordion_header">
+      July
+    </div>
+    <div class="accordion_body">
+       <p>Live at Northwell Health at Jones Beach Theater, July 18-22. Catch your favorite arstists live, Jones Beach State Park 895 Bay Pkwy, Wantagh, NY 11793.</p>
+       <br>
+<p>Check for availability: <input type="text" id="datepicker"></p>
+    </div>
+  </div>
+  <div class="accordion_wrap accordion_3">
+    <div class="accordion_header">
+      August
+    </div>
+    <div class="accordion_body">
+      <p>Live at Northwell Health at Jones Beach Theater, August 10-14. Catch your favorite arstists live, Jones Beach State Park 895 Bay Pkwy, Wantagh, NY 11793.</p>
+    </div>
+  </div>
+  
+
+
+
+
+</body>
+</html>
